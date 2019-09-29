@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/backll"
+    android:padding="20dp"
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/linearlayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="278dp"
+        android:layout_height="95dp"
+        android:src="@drawable/logoi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN "
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="32sp"
+        android:fontFamily="Robotic-Regular"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+
+    <EditText
+        android:layout_below="@+id/linearlayout1"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:id="@+id/emailuser"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:layout_below="@+id/emailuser"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:id="@+id/passwordUser"
+        android:inputType="textPassword"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+
+    <Button
+        android:id="@+id/loginuser"
+        android:layout_below="@+id/passwordUser"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/whitecolor"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        android:text="Sign in"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/goregister"
+        android:layout_below="@+id/loginuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="New User? Create an Account"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>

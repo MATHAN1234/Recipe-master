@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <ImageView
+            android:id="@+id/backbuttonp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+
+            android:background="@drawable/ic_backspace_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Your Recipe Below: "
+            android:textColor="@color/whitecolor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageone"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_circle_outline_24dp" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three"
+            android:layout_width="299dp"
+            android:layout_height="83dp"
+            android:layout_below="@id/two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/one"
+                android:text="You haven't saved any recipes yet"
+                android:textAlignment="center"
+                android:textColor="@color/textcolortwo"
+                android:textSize="28sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/four"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/three"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To start watching your all dishes click the
+                    'Add Recipe' icon on homepage."
+                android:textAlignment="center"
+                android:textColor="@color/textcolortwo"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/five"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/four"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/gohomepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to HomePage"
+                android:textAlignment="center"
+                android:textColor="@color/colorbottomnavigation"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/headerView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recycleview1"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

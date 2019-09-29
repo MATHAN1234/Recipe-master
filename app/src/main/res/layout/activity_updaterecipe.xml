@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailActivity"
+    android:background="@color/recipeactbackgroundcolor"
+    >
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/ivImagei"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hometwo" />
+
+            <ImageView
+                android:id="@+id/backbuttoni"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_backspace_black_24dp"/>
+
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_texttwo_box">
+
+                <TextView
+                    android:id="@+id/fnamei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:textSize="30sp"
+                    android:paddingBottom="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whitecolor"
+                    android:text="..."
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_box">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/whitecolor"
+                    android:text="Category: "
+                    />
+
+                <TextView
+                    android:id="@+id/cati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/whitecolor"
+                    android:text=" ... "
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar2i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@color/recipeactbackgroundcolor"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/textcolorthree"
+            app:tabTextColor="@color/colorPrimaryDark"
+            >
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ingre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTS"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIRECTION"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                />
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/appbar2i"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewPager"
+        android:layout_above="@+id/bottomtext"
+        android:layout_margin="16dp">
+
+
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:background="@color/redcolor"
+            android:textColor="@color/whitecolor"
+            android:text="Delete RECIPE"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

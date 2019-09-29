@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:padding="30dp"
+    android:background="@color/profilebackgroudcolor"
+    tools:context=".userprofile"
+    >
+
+    <TextView
+        android:id="@+id/textviewprofilelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile:"
+        android:textSize="32sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="italic"
+        android:textColor="@color/textcolorthree"/>
+
+    <TextView
+        android:layout_below="@+id/textviewprofilelogo"
+        android:id="@+id/usernamelogo"
+        android:text="Username"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/textcolorthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_below="@+id/usernamelogo"
+        android:text="User xyz"
+        android:textSize="20sp"
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary">
+    </TextView>
+
+    <TextView
+        android:layout_below="@+id/nametext"
+        android:id="@+id/Emaillogo"
+        android:text="Email"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/textcolorthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_below="@+id/Emaillogo"
+        android:text="Userxyz@gmail.com"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+
+    <Button
+        android:layout_below="@+id/emailtext"
+        android:id="@+id/logout"
+        android:background="@color/colorAccent"
+        android:textColor="@color/whitecolor"
+        android:text="LOGOUT"
+        android:layout_marginTop="40dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@+id/logout"
+        android:text="Go Back"
+        android:layout_marginTop="70dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/gobackbutton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+
+
+
+</RelativeLayout>

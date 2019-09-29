@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "775397959387",
+    "firebase_url": "https://receipapp.firebaseio.com",
+    "project_id": "receipapp",
+    "storage_bucket": "receipapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775397959387:android:f9b3b7493c61e216",
+        "android_client_info": {
+          "package_name": "com.example.recipe_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775397959387-qh4al4cgeo8q1bedvkvhnfvv8r4pr1ca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipe_app",
+            "certificate_hash": "a9d1223a030536741acf17638661d14f4bf038b2"
+          }
+        },
+        {
+          "client_id": "775397959387-e1b683ue3k19or89bgf47k20il97eeeo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipe_app",
+            "certificate_hash": "e600c127820daaf16bc51ddb2598a2769691f438"
+          }
+        },
+        {
+          "client_id": "775397959387-i1v8i8a7vuuac7cntb1k6jkjjefm98gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipe_app",
+            "certificate_hash": "bc89cbc11a6fe10c5103c916f98ce40a9e7c5416"
+          }
+        },
+        {
+          "client_id": "775397959387-2grk9t9192g6nq92ktsgohd1suk4gc8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXod_tjgqc_hWQCCAxHXvz_dRMvVGRSrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775397959387-2grk9t9192g6nq92ktsgohd1suk4gc8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

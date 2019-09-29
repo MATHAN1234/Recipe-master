@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textviewprofilelogo" type="id" />
+    <item name="usernamelogo" type="id" />
+    <item name="nametext" type="id" />
+    <item name="Emaillogo" type="id" />
+    <item name="emailtext" type="id" />
+    <item name="logout" type="id" />
+</resources>
